@@ -1,0 +1,330 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+*/
+
+/* Global Styles Here */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary Colors */
+
+  --PrimaryColorVeryDarkBlue: hsl(233, 47%, 7%); /* main background */
+  --PrimaryColorDarkDesaturatedBlue: hsl(244, 38%, 16%); /* card background */
+  --PrimaryColorSoftViolet: hsl(277, 64%, 61%); /* accent */
+
+  /* Neutral Colors */
+
+  --NeutralColorWhite: hsl(0, 0%, 100%); /* main heading, stats */
+  --NeutralColorLightTransparentWhite: hsla(
+    0,
+    0%,
+    100%,
+    0.75
+  ); /* main paragraph */
+  --NeutralColorMedTransparentWhite: hsla(0, 0%, 100%, 0.6); /* stat headings */
+
+  /* Typography */
+
+  --TypographyFontSize: 15px;
+
+  --TypographyFontFamilyInter: "Inter", sans-serif;
+  --TypographyFontWeightInterMedBold: 400;
+  --TypographyFontWeightInterDarkBold: 700;
+
+  --TypographyFontFamilyLexendDeca: "Lexend Deca", sans-serif;
+  --TypographyFontWeightLexendDecaMedBold: 400;
+
+  /* Images */
+
+  --RightSecBgImage: url("../assets/image-header-desktop.jpg");
+}
+
+body {
+  background-color: var(--PrimaryColorVeryDarkBlue);
+  flex: display;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  font-size: var(--TypographyFontSize);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--TypographyFontFamilyLexendDeca);
+}
+
+/* Specific Section Styless Here */
+
+.card--container {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card--sec--left {
+  width: 50%;
+  height: 100%;
+  border-radius: 1em 0 0 1em;
+  background-color: var(--PrimaryColorDarkDesaturatedBlue);
+  text-align: center;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 375px;
+}
+
+.card--sec--left--1--hdng {
+  color: var(--NeutralColorWhite);
+  margin: 4em 0 1em 0;
+  font-size: 2em;
+  text-align: left;
+}
+
+.card--sec--left--1--hdng--span {
+  color: var(--PrimaryColorSoftViolet);
+}
+
+.card--sec--left--1--txt {
+  color: var(--NeutralColorMedTransparentWhite);
+  text-align: left;
+  font-family: var(--TypographyFontFamilyInter);
+  font-weight: var(--TypographyFontWeightInterMedBold);
+  line-height: 2;
+}
+
+.card--sec--left--2--stats {
+  margin: 6em 0 0 0;
+  color: var(--NeutralColorWhite);
+  display: flex;
+  margin: 4em 0 2em 0;
+}
+
+.card--sec--left--2--stats h1 {
+  font-size: 2em;
+  text-align: left;
+  font-family: var(--TypographyFontFamilyInter);
+}
+
+.card--sec--left--2--stats h4 {
+  color: var(--NeutralColorMedTransparentWhite);
+  text-align: left;
+  font-family: var(--TypographyFontFamilyLexendDeca);
+  font-weight: var(--TypographyFontWeightInterMedBold);
+  text-transform: uppercase;
+}
+
+.card--sec--left--2--stats--left--wrapper {
+  margin: 0 4em 0 0;
+}
+
+.card--sec--left--2--stats--center--wrapper {
+  margin: 0 4em 0 0;
+}
+
+.card--sec--left--2--stats--right--wrapper {
+  margin: 0 0 4em 0;
+}
+
+.card--sec--left--2--stats--left--txt {
+  margin: 0.5em 0 0 0;
+}
+
+.card--sec--left--2--stats--center--txt {
+  margin: 0.5em 0 0 0;
+}
+
+.card--sec--left--2--stats--right--txt {
+  margin: 0.5em 0 0 0;
+}
+
+.card--sec--right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  min-width: 375px;
+  object-fit: cover;
+  border-radius: 0 1em 1em 0;
+  background: var(--RightSecBgImage) center center;
+  background: linear-gradient(
+      0deg,
+      rgba(64, 84, 165, 0.6),
+      rgba(64, 84, 165, 0.6)
+    ),
+    var(--RightSecBgImage) center center;
+}
+
+.card--sec--right {
+  max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+}
+
+.card--sec--right--img__desktop {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+}
+
+.card--sec--right--img__mobile {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  margin: -4em 0 4em 0;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 375px) and (max-width: 1440px) {
+  .card--container {
+    flex-direction: column-reverse;
+    
+  }
+
+  .card--container h1 {
+    text-align: center;
+  }
+
+  .card--container p {
+    text-align: center;
+  }
+
+  .card--sec--left {
+    border-radius: 0 0 1em 1em;
+    padding: 2%;
+    height: 100vh;
+    margin: 0 0 4em 0;
+  }
+
+  .card--sec--left--1--hdng {
+    margin: 1em 0 1em 0;
+  }
+
+  .card--sec--left--2--stats {
+    flex-direction: column;
+  }
+
+  .card--sec--left--2--stats--left--wrapper h4 {
+    margin: auto;
+    text-align: center;
+    margin: auto;
+  }
+
+  .card--sec--left--2--stats--center--wrapper h4 {
+    margin: auto;
+    text-align: center;
+    margin: auto;
+  }
+
+  .card--sec--left--2--stats--right--wrapper h4 {
+    margin: auto;
+    text-align: center;
+    margin: auto;
+  }
+
+  .card--sec--left--2--stats--left--wrapper {
+    margin: auto;
+  }
+
+  .card--sec--left--2--stats--center--wrapper {
+    margin: 2em 0 0 0;
+  }
+
+  .card--sec--left--2--stats--right--wrapper {
+    margin: 2em 0 0 0;
+  }
+
+  .card--sec--right {
+    border-radius: 1em 1em 0 0;
+    margin: 18em 0 0 0;
+  }
+
+  .card--sec--right--img {
+    padding: 40%;
+  }
+
+  .card--sec--right--img__mobile {
+    margin: 6em 0 0 0;
+  }
+
+  footer {
+    margin: 18em 0 0 0;
+    padding: 0 0 4em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
