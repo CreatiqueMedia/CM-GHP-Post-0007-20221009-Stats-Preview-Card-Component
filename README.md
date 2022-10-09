@@ -47,7 +47,13 @@ Users should be able to:
 
 Desktop View
 
+![screely-1665335568189](https://user-images.githubusercontent.com/80857344/194770270-b84e5ec0-d29d-4e3f-92cd-3299e4196d55.png)
+
+
 Mobile View
+
+![screely-1665336325183](https://user-images.githubusercontent.com/80857344/194770754-f3a470a3-53a6-41a6-b556-ac2f93de6450.png)
+
 
 ### Links
 
