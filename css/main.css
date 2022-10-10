@@ -196,7 +196,6 @@ main {
   width: 50%;
   height: 100%;
   min-width: 375px;
-  object-fit: cover;
   border-radius: 0 1em 1em 0;
   background: var(--RightSecBgImage) center center;
   background: linear-gradient(
@@ -207,19 +206,13 @@ main {
     var(--RightSecBgImage) center center;
 }
 
-.card--sec--right {
-  max-width: 100%;
-            max-height: 100vh;
-            margin: auto;
-}
-
 .card--sec--right--img__desktop {
   width: 100%;
   height: auto;
   object-fit: fill;
   max-width: 100%;
-            max-height: 100vh;
-            margin: auto;
+  max-height: 100vh;
+  margin: auto;
 }
 
 .card--sec--right--img__mobile {
@@ -227,8 +220,8 @@ main {
   height: auto;
   object-fit: fill;
   max-width: 100%;
-            max-height: 100vh;
-            margin: auto;
+  max-height: 100vh;
+  margin: auto;
 }
 
 footer {
@@ -248,7 +241,6 @@ footer a {
 /* Media Queries */
 
 @media only screen and (min-width: 375px) and (max-width: 1440px) {
-  
   .card--container {
     flex-direction: column-reverse;
   }
