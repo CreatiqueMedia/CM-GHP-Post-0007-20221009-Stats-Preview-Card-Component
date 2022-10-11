@@ -243,6 +243,7 @@ footer a {
 @media only screen and (min-width: 375px) and (max-width: 1440px) {
   .card--container {
     flex-direction: column-reverse;
+    margin: -6em 0 0 0;
   }
 
   .card--container h1 {
@@ -257,7 +258,7 @@ footer a {
     border-radius: 0 0 1em 1em;
     padding: 2%;
     height: 80vh;
-    margin: 0 0 4em 0;
+    margin: -2em 0 4em 0;
   }
 
   .card--sec--left--1--hdng {
